@@ -49,6 +49,17 @@ nav {
   display: flex; align-items: center; justify-content: space-between;
   padding: 24px 48px;
   mix-blend-mode: difference;
+  transition: background 0.35s ease, backdrop-filter 0.35s ease,
+              -webkit-backdrop-filter 0.35s ease, padding 0.35s ease,
+              border-color 0.35s ease;
+}
+nav.scrolled {
+  mix-blend-mode: normal;
+  background: rgba(9, 9, 9, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+  padding: 16px 48px;
 }
 .nav-logo {
   font-family: var(--font-mono); font-size: 13px; font-weight: 500;
@@ -404,6 +415,7 @@ footer {
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   nav { padding: 20px 24px; }
+  nav.scrolled { padding: 14px 24px; }
   .nav-links { gap: 24px; }
   section { padding: 80px 24px; }
   #hero { padding: 0 24px 48px; }
