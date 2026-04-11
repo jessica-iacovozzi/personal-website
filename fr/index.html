@@ -1,304 +1,479 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jessica Iacovozzi — Spécialiste Support Technique</title>
-  <meta name="description" content="Spécialiste Support Technique et développeuse full-stack basée à Saint-Hyacinthe. Expertise API approfondie, instinct de bâtisseuse, et un bilan de livraisons réussies." />
-  <link rel="alternate" hreflang="en" href="../" />
-  <link rel="alternate" hreflang="fr" href="./" />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Epilogue:ital,wght@0,300;0,400;0,500;1,300;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../assets/css/style.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jessica Iacovozzi — Spécialiste Support Technique</title>
+    <meta
+      name="description"
+      content="Spécialiste Support Technique et développeuse full-stack basée à Saint-Hyacinthe. Expertise API approfondie, instinct de bâtisseuse, et un bilan de livraisons réussies."
+    />
+    <link rel="alternate" hreflang="en" href="../" />
+    <link rel="alternate" hreflang="fr" href="./" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Epilogue:ital,wght@0,300;0,400;0,500;1,300;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Passer au contenu</a>
 
-  <a href="#main" class="skip-link">Passer au contenu</a>
+    <!-- Custom cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursor-ring"></div>
 
-  <!-- Custom cursor -->
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-ring" id="cursor-ring"></div>
-
-  <!-- Nav -->
-  <nav>
-    <a href="#" class="nav-logo">JI</a>
-    <ul class="nav-links">
-      <li><a href="#about">À propos</a></li>
-      <li><a href="#projects">Projets</a></li>
-      <li><a href="#skills">Compétences</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="../" class="nav-lang" hreflang="en">EN</a></li>
-    </ul>
-    <button class="nav-hamburger" aria-label="Basculer le menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
-
-  <main id="main">
-
-  <!-- Hero -->
-  <section id="hero">
-    <div class="hero-grid-line"></div>
-    <div class="hero-grid-line"></div>
-    <div class="hero-grid-line"></div>
-
-    <div class="hero-visual" aria-hidden="true">
-      <div class="hero-visual-ring"></div>
-      <div class="hero-visual-ring hero-visual-ring--sm"></div>
-      <div class="hero-visual-cross"></div>
-      <div class="hero-visual-dot"></div>
-    </div>
-
-    <p class="hero-eyebrow">Spécialiste Support Technique · Développeuse Full-Stack · Saint-Hyacinthe</p>
-    <h1 class="hero-name">
-      <span class="hero-name-line">Jessica</span>
-      <span class="hero-name-line">Iacovozzi</span>
-    </h1>
-    <div class="hero-meta">
-      <p class="hero-role">
-        Bâtir l'infrastructure qui évite les bris —<br>
-        <strong>une expertise API solide, l'instinct d'une bâtisseuse, et un bilan de livraisons réussies.</strong>
-      </p>
-      <a href="#contact" class="hero-cta">
-        Me contacter
-        <span class="hero-cta-arrow"></span>
-      </a>
-    </div>
-    <p class="hero-scroll-hint">Défiler pour explorer</p>
-  </section>
-
-  <!-- Marquee -->
-  <div class="marquee-wrap">
-    <div class="marquee-track" aria-hidden="true">
-      <span class="marquee-item">REST APIs <span class="marquee-dot">✦</span></span>
-      <span class="marquee-item">GraphQL <span class="marquee-dot">✦</span></span>
-      <span class="marquee-item">TypeScript <span class="marquee-dot">✦</span></span>
-      <span class="marquee-item">Vue.js <span class="marquee-dot">✦</span></span>
-      <span class="marquee-item">React <span class="marquee-dot">✦</span></span>
-      <span class="marquee-item">Next.js <span class="marquee-dot">✦</span></span>
-      <span class="marquee-item">Python <span class="marquee-dot">✦</span></span>
-      <span class="marquee-item">Ruby on Rails <span class="marquee-dot">✦</span></span>
-      <span class="marquee-item">Postman <span class="marquee-dot">✦</span></span>
-      <span class="marquee-item">Gestion des SLA <span class="marquee-dot">✦</span></span>
-      <span class="marquee-item">Documentation Technique <span class="marquee-dot">✦</span></span>
-      <span class="marquee-item">Docker <span class="marquee-dot">✦</span></span>
-      <span class="marquee-item">AWS <span class="marquee-dot">✦</span></span>
-      <span class="marquee-item">Azure <span class="marquee-dot">✦</span></span>
-      <!-- Duplicate for seamless loop -->
-      <span class="marquee-item">REST APIs <span class="marquee-dot">✦</span></span>
-      <span class="marquee-item">GraphQL <span class="marquee-dot">✦</span></span>
-      <span class="marquee-item">TypeScript <span class="marquee-dot">✦</span></span>
-      <span class="marquee-item">Vue.js <span class="marquee-dot">✦</span></span>
-      <span class="marquee-item">React <span class="marquee-dot">✦</span></span>
-      <span class="marquee-item">Next.js <span class="marquee-dot">✦</span></span>
-      <span class="marquee-item">Python <span class="marquee-dot">✦</span></span>
-      <span class="marquee-item">Ruby on Rails <span class="marquee-dot">✦</span></span>
-      <span class="marquee-item">Postman <span class="marquee-dot">✦</span></span>
-      <span class="marquee-item">Gestion des SLA <span class="marquee-dot">✦</span></span>
-      <span class="marquee-item">Documentation Technique <span class="marquee-dot">✦</span></span>
-      <span class="marquee-item">Docker <span class="marquee-dot">✦</span></span>
-      <span class="marquee-item">AWS <span class="marquee-dot">✦</span></span>
-      <span class="marquee-item">Azure <span class="marquee-dot">✦</span></span>
-    </div>
-  </div>
-
-  <!-- About -->
-  <section id="about">
-    <div class="about-left reveal">
-      <div class="about-number">01</div>
-      <h2 class="about-heading">Plus proche du <em>problème</em> que ben des ingénieurs. Plus proche du <em>code</em> que ben des équipes de support.</h2>
-    </div>
-    <div class="about-right reveal reveal-delay-2">
-      <div class="section-label">À propos</div>
-      <p class="about-text">
-        Je suis une <strong>spécialiste support technique et développeuse full-stack</strong> basée au Canada, avec une expertise à l'intersection du débogage technique avancé, de l'infrastructure développeur et de la communication transversale. Je règle pas juste des tickets — je bâtis les systèmes, la documentation et les outils qui évitent qu'ils se reproduisent.
-      </p>
-      <p class="about-text">
-        Chez Mediaclip, j'ai transformé une documentation client éparpillée en une ressource d'intégration structurée, réduisant la friction pour les opérateurs B2B naviguant dans une API SaaS complexe. Chez Virtuose Technologies, j'ai livré des fonctionnalités full-stack sur Vue.js, Django et React, et j'ai été personnellement recommandée pour rejoindre une nouvelle équipe.
-      </p>
-      <p class="about-text">
-        Je performe là où la profondeur produit rencontre la responsabilité technique — intégrations SaaS, écosystèmes API, systèmes orientés développeurs. J'ai à cœur de rendre les choses robustes, bien documentées, et plus simples pour la personne qui vient après.
-      </p>
-      <ul class="about-tags">
-        <li class="tag">Débogage API</li>
-        <li class="tag">Intégrations SaaS</li>
-        <li class="tag">Rédaction Technique</li>
-        <li class="tag">Développement Full-Stack</li>
-        <li class="tag">Bilingue FR/EN</li>
-        <li class="tag">Agile/Scrum</li>
+    <!-- Nav -->
+    <nav>
+      <a href="#" class="nav-logo">JI</a>
+      <ul class="nav-links">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="../" class="nav-lang" hreflang="en">EN</a></li>
       </ul>
-    </div>
-  </section>
+      <button
+        class="nav-hamburger"
+        aria-label="Basculer le menu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
 
-  <!-- Projects -->
-  <section id="projects">
-    <h2 class="section-label reveal">Projets sélectionnés</h2>
-    <div class="projects-grid">
+    <main id="main">
+      <!-- Hero -->
+      <section id="hero">
+        <div class="hero-grid-line"></div>
+        <div class="hero-grid-line"></div>
+        <div class="hero-grid-line"></div>
 
-      <div class="project-card reveal">
-        <div class="project-num">
-          <span>01 / 04</span>
-          <span class="project-stack-badge">Vue.js · Airtable · i18n</span>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-visual-ring"></div>
+          <div class="hero-visual-ring hero-visual-ring--sm"></div>
+          <div class="hero-visual-cross"></div>
+          <div class="hero-visual-dot"></div>
         </div>
-        <h3 class="project-title">Rosetta's Angels</h3>
-        <p class="project-desc">
-          Application web bilingue Vue.js 3 pour un organisme sans but lucratif avec <strong>70% d'amélioration des performances de chargement</strong> (1,4s → 400ms) via le lazy loading, la division de bundle et la compression. Sécurité renforcée avec protection XSS/CSRF, reCAPTCHA v3, sanitisation des données et validation côté serveur contre une API REST Airtable.
-        </p>
-        <ul class="project-tags">
-          <li class="project-tag">Vue.js 3</li>
-          <li class="project-tag">Vuetify 3</li>
-          <li class="project-tag">Vue Router</li>
-          <li class="project-tag">Vue-i18n</li>
-          <li class="project-tag">REST API</li>
-          <li class="project-tag">reCAPTCHA v3</li>
-        </ul>
-      </div>
 
-      <div class="project-card reveal reveal-delay-1">
-        <div class="project-num">
-          <span>02 / 04</span>
-          <span class="project-stack-badge">Next.js · Supabase · WCAG</span>
+        <p class="hero-eyebrow">
+          Spécialiste Support Technique · Développeuse Full-Stack ·
+          Saint-Hyacinthe
+        </p>
+        <h1 class="hero-name">
+          <span class="hero-name-line">Jessica</span>
+          <span class="hero-name-line">Iacovozzi</span>
+        </h1>
+        <div class="hero-meta">
+          <p class="hero-role">
+            Bâtir l'infrastructure qui évite les bris —<br />
+            <strong
+              >une expertise API solide, l'instinct d'une bâtisseuse, et un
+              bilan de livraisons réussies.</strong
+            >
+          </p>
+          <a href="#contact" class="hero-cta">
+            Me contacter
+            <span class="hero-cta-arrow"></span>
+          </a>
         </div>
-        <h3 class="project-title">Whisker Budget</h3>
-        <p class="project-desc">
-          Estimateur de coûts full-stack construit avec <strong>Next.js, React 19, TypeScript et Supabase</strong>, avec suivi des dépenses en temps réel, requêtes multi-tables et estimations éditables par glisser-déposer. Interface conforme WCAG utilisant Tailwind CSS, Radix UI, React Hook Form et validation Zod.
-        </p>
-        <ul class="project-tags">
-          <li class="project-tag">Next.js</li>
-          <li class="project-tag">React 19</li>
-          <li class="project-tag">TypeScript</li>
-          <li class="project-tag">Supabase</li>
-          <li class="project-tag">Tailwind CSS</li>
-          <li class="project-tag">WCAG</li>
-        </ul>
-      </div>
+        <p class="hero-scroll-hint">Défiler pour explorer</p>
+      </section>
 
-      <div class="project-card reveal reveal-delay-2">
-        <div class="project-num">
-          <span>03 / 04</span>
-          <span class="project-stack-badge">React · API · Accessibilité</span>
+      <!-- Marquee -->
+      <div class="marquee-wrap">
+        <div class="marquee-track" aria-hidden="true">
+          <span class="marquee-item"
+            >REST APIs <span class="marquee-dot">✦</span></span
+          >
+          <span class="marquee-item"
+            >GraphQL <span class="marquee-dot">✦</span></span
+          >
+          <span class="marquee-item"
+            >TypeScript <span class="marquee-dot">✦</span></span
+          >
+          <span class="marquee-item"
+            >Vue.js <span class="marquee-dot">✦</span></span
+          >
+          <span class="marquee-item"
+            >React <span class="marquee-dot">✦</span></span
+          >
+          <span class="marquee-item"
+            >Next.js <span class="marquee-dot">✦</span></span
+          >
+          <span class="marquee-item"
+            >Python <span class="marquee-dot">✦</span></span
+          >
+          <span class="marquee-item"
+            >Ruby on Rails <span class="marquee-dot">✦</span></span
+          >
+          <span class="marquee-item"
+            >Postman <span class="marquee-dot">✦</span></span
+          >
+          <span class="marquee-item"
+            >Gestion des SLA <span class="marquee-dot">✦</span></span
+          >
+          <span class="marquee-item"
+            >Documentation Technique <span class="marquee-dot">✦</span></span
+          >
+          <span class="marquee-item"
+            >Docker <span class="marquee-dot">✦</span></span
+          >
+          <span class="marquee-item"
+            >AWS <span class="marquee-dot">✦</span></span
+          >
+          <span class="marquee-item"
+            >Azure <span class="marquee-dot">✦</span></span
+          >
+          <!-- Duplicate for seamless loop -->
+          <span class="marquee-item"
+            >REST APIs <span class="marquee-dot">✦</span></span
+          >
+          <span class="marquee-item"
+            >GraphQL <span class="marquee-dot">✦</span></span
+          >
+          <span class="marquee-item"
+            >TypeScript <span class="marquee-dot">✦</span></span
+          >
+          <span class="marquee-item"
+            >Vue.js <span class="marquee-dot">✦</span></span
+          >
+          <span class="marquee-item"
+            >React <span class="marquee-dot">✦</span></span
+          >
+          <span class="marquee-item"
+            >Next.js <span class="marquee-dot">✦</span></span
+          >
+          <span class="marquee-item"
+            >Python <span class="marquee-dot">✦</span></span
+          >
+          <span class="marquee-item"
+            >Ruby on Rails <span class="marquee-dot">✦</span></span
+          >
+          <span class="marquee-item"
+            >Postman <span class="marquee-dot">✦</span></span
+          >
+          <span class="marquee-item"
+            >Gestion des SLA <span class="marquee-dot">✦</span></span
+          >
+          <span class="marquee-item"
+            >Documentation Technique <span class="marquee-dot">✦</span></span
+          >
+          <span class="marquee-item"
+            >Docker <span class="marquee-dot">✦</span></span
+          >
+          <span class="marquee-item"
+            >AWS <span class="marquee-dot">✦</span></span
+          >
+          <span class="marquee-item"
+            >Azure <span class="marquee-dot">✦</span></span
+          >
         </div>
-        <h3 class="project-title">Dog Breed Hub</h3>
-        <p class="project-desc">
-          Application React responsive avec <strong>défilement infini et intégration API Ninjas</strong> via Axios et React Query, et une interface accessible conforme WCAG construite avec Chakra UI et HTML5 sémantique. Architecture de composants propre avec des patterns de récupération de données efficaces.
-        </p>
-        <ul class="project-tags">
-          <li class="project-tag">React</li>
-          <li class="project-tag">React Query</li>
-          <li class="project-tag">Axios</li>
-          <li class="project-tag">Chakra UI</li>
-          <li class="project-tag">WCAG</li>
-          <li class="project-tag">REST API</li>
-        </ul>
       </div>
 
-      <div class="project-card reveal reveal-delay-3">
-        <div class="project-num">
-          <span>04 / 04</span>
-          <span class="project-stack-badge">Rails · Docker · Fly.io</span>
+      <!-- About -->
+      <section id="about">
+        <div class="about-left reveal">
+          <div class="about-number">01</div>
+          <h2 class="about-heading">
+            Plus proche du <em>problème</em> que ben des ingénieurs. Plus proche
+            du <em>code</em> que ben des équipes de support.
+          </h2>
         </div>
-        <h3 class="project-title">Charity Finder API</h3>
-        <p class="project-desc">
-          <strong>API Rails RESTful</strong> offrant un accès consultable aux données des organismes de bienfaisance canadiens avec filtrage par note, ville, secteur et impact — plus tri complexe et pagination. Architecture Docker déployée sur Fly.io avec une documentation API complète décrivant tous les endpoints, paramètres de requête et schémas de réponse.
-        </p>
-        <ul class="project-tags">
-          <li class="project-tag">Ruby on Rails</li>
-          <li class="project-tag">Docker</li>
-          <li class="project-tag">Fly.io</li>
-          <li class="project-tag">REST API</li>
-          <li class="project-tag">PostgreSQL</li>
-          <li class="project-tag">Docs API</li>
-        </ul>
-      </div>
+        <div class="about-right reveal reveal-delay-2">
+          <div class="section-label">À propos</div>
+          <p class="about-text">
+            Je suis une
+            <strong
+              >spécialiste support technique et développeuse full-stack</strong
+            >
+            basée au Canada, avec une expertise à l'intersection du débogage
+            technique avancé, de l'infrastructure développeur et de la
+            communication transversale. Je règle pas juste des tickets — je
+            bâtis les systèmes, la documentation et les outils qui évitent
+            qu'ils se reproduisent.
+          </p>
+          <p class="about-text">
+            Chez Mediaclip, j'ai transformé une documentation client éparpillée
+            en une ressource d'intégration structurée, réduisant la friction
+            pour les opérateurs B2B naviguant dans une API SaaS complexe. Chez
+            Virtuose Technologies, j'ai livré des fonctionnalités full-stack sur
+            Vue.js, Django et React, et j'ai été personnellement recommandée
+            pour rejoindre une nouvelle équipe.
+          </p>
+          <p class="about-text">
+            Je performe là où la profondeur produit rencontre la responsabilité
+            technique — intégrations SaaS, écosystèmes API, systèmes orientés
+            développeurs. J'ai à cœur de rendre les choses robustes, bien
+            documentées, et plus simples pour la personne qui vient après.
+          </p>
+          <ul class="about-tags">
+            <li class="tag">Débogage API</li>
+            <li class="tag">Intégrations SaaS</li>
+            <li class="tag">Rédaction Technique</li>
+            <li class="tag">Développement Full-Stack</li>
+            <li class="tag">Bilingue FR/EN</li>
+            <li class="tag">Agile/Scrum</li>
+          </ul>
+        </div>
+      </section>
 
-    </div>
-  </section>
+      <!-- Projects -->
+      <section id="projects">
+        <h2 class="section-label reveal">Projets sélectionnés</h2>
+        <div class="projects-grid">
+          <div class="project-card reveal">
+            <div class="project-num">
+              <span>01 / 06</span>
+              <span class="project-stack-badge">Vue.js · Airtable · i18n</span>
+            </div>
+            <h3 class="project-title">Rosetta's Angels</h3>
+            <p class="project-desc">
+              Application web bilingue Vue.js 3 pour un organisme sans but
+              lucratif avec
+              <strong>70% d'amélioration des performances de chargement</strong>
+              (1,4s → 400ms) via le lazy loading, la division de bundle et la
+              compression. Sécurité renforcée avec protection XSS/CSRF,
+              reCAPTCHA v3, sanitisation des données et validation côté serveur
+              contre une API REST Airtable.
+            </p>
+            <ul class="project-tags">
+              <li class="project-tag">Vue.js 3</li>
+              <li class="project-tag">Vuetify 3</li>
+              <li class="project-tag">Vue Router</li>
+              <li class="project-tag">Vue-i18n</li>
+              <li class="project-tag">REST API</li>
+              <li class="project-tag">reCAPTCHA v3</li>
+            </ul>
+          </div>
 
-  <!-- Skills -->
-  <section id="skills">
-    <h2 class="section-label reveal">Compétences techniques</h2>
-    <div class="skills-grid reveal">
-      <div class="skill-group">
-        <p class="skill-group-label">Support &amp; Outils</p>
-        <ul class="skill-list">
-          <li>Freshdesk · Jira · Postman</li>
-          <li>Guru · REST APIs · GraphQL</li>
-          <li>Débogage API · Gestion des SLA</li>
-          <li>Documentation Technique</li>
-          <li>Intégrations Shopify</li>
-        </ul>
-      </div>
-      <div class="skill-group">
-        <p class="skill-group-label">Langages</p>
-        <ul class="skill-list">
-          <li>JavaScript (ES6+) · TypeScript</li>
-          <li>Python · Ruby</li>
-          <li>HTML5 · CSS / SASS</li>
-          <li>SQL · KQL</li>
-        </ul>
-      </div>
-      <div class="skill-group">
-        <p class="skill-group-label">Frameworks</p>
-        <ul class="skill-list">
-          <li>React · Next.js · Vue.js</li>
-          <li>Node.js · Express.js</li>
-          <li>Django · Ruby on Rails</li>
-        </ul>
-      </div>
-      <div class="skill-group">
-        <p class="skill-group-label">Plateformes &amp; DevOps</p>
-        <ul class="skill-list">
-          <li>Git · GitHub</li>
-          <li>Docker · AWS · Azure</li>
-          <li>CI/CD (GitHub Actions)</li>
-          <li>Fly.io · Vercel</li>
-        </ul>
-      </div>
-      <div class="skill-group">
-        <p class="skill-group-label">Données</p>
-        <ul class="skill-list">
-          <li>PostgreSQL · SQLite · MongoDB</li>
-          <li>Supabase · Airtable</li>
-          <li>KQL · Conception de requêtes complexes</li>
-        </ul>
-      </div>
-      <div class="skill-group">
-        <p class="skill-group-label">Pratiques</p>
-        <ul class="skill-list">
-          <li>Accessibilité WCAG</li>
-          <li>Agile / Scrum</li>
-          <li>Intégration SaaS</li>
-          <li>Rédaction Technique</li>
-          <li>Bilingue FR / EN</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+          <div class="project-card reveal reveal-delay-1">
+            <div class="project-num">
+              <span>02 / 06</span>
+              <span class="project-stack-badge">Next.js · Supabase · WCAG</span>
+            </div>
+            <h3 class="project-title">Whisker Budget</h3>
+            <p class="project-desc">
+              Estimateur de coûts full-stack construit avec
+              <strong>Next.js, React 19, TypeScript et Supabase</strong>, avec
+              suivi des dépenses en temps réel, requêtes multi-tables et
+              estimations éditables par glisser-déposer. Interface conforme WCAG
+              utilisant Tailwind CSS, Radix UI, React Hook Form et validation
+              Zod.
+            </p>
+            <ul class="project-tags">
+              <li class="project-tag">Next.js</li>
+              <li class="project-tag">React 19</li>
+              <li class="project-tag">TypeScript</li>
+              <li class="project-tag">Supabase</li>
+              <li class="project-tag">Tailwind CSS</li>
+              <li class="project-tag">WCAG</li>
+            </ul>
+          </div>
 
-  <!-- Contact -->
-  <section id="contact">
-    <div class="contact-bg-text" aria-hidden="true">Bonjour</div>
-    <span class="contact-label reveal">Me contacter</span>
-    <h2 class="contact-heading reveal reveal-delay-1">
-      Bâtissons de quoi<br>
-      <em>qui vaut la peine d'être livré.</em>
-    </h2>
-    <div class="contact-links reveal reveal-delay-2">
-      <a href="mailto:iacovozzi.jessica@gmail.com" class="contact-link">Courriel</a>
-      <div class="contact-divider"></div>
-      <a href="https://linkedin.com/in/jessica-iacovozzi" target="_blank" rel="noopener" class="contact-link">LinkedIn</a>
-      <div class="contact-divider"></div>
-      <a href="https://github.com/jessica-iacovozzi" target="_blank" rel="noopener" class="contact-link">GitHub</a>
-    </div>
-  </section>
+          <div class="project-card reveal reveal-delay-2">
+            <div class="project-num">
+              <span>03 / 06</span>
+              <span class="project-stack-badge"
+                >React · API · Accessibilité</span
+              >
+            </div>
+            <h3 class="project-title">Dog Breed Hub</h3>
+            <p class="project-desc">
+              Application React responsive avec
+              <strong>défilement infini et intégration API Ninjas</strong> via
+              Axios et React Query, et une interface accessible conforme WCAG
+              construite avec Chakra UI et HTML5 sémantique. Architecture de
+              composants propre avec des patterns de récupération de données
+              efficaces.
+            </p>
+            <ul class="project-tags">
+              <li class="project-tag">React</li>
+              <li class="project-tag">React Query</li>
+              <li class="project-tag">Axios</li>
+              <li class="project-tag">Chakra UI</li>
+              <li class="project-tag">WCAG</li>
+              <li class="project-tag">REST API</li>
+            </ul>
+          </div>
 
-  </main>
+          <div class="project-card reveal reveal-delay-3">
+            <div class="project-num">
+              <span>04 / 06</span>
+              <span class="project-stack-badge">Python · FastAPI · PostgreSQL</span>
+            </div>
+            <h3 class="project-title">Canadian Charities API</h3>
+            <p class="project-desc">
+              <strong>API RESTful</strong> offrant un accès consultable aux
+              données des organismes de bienfaisance canadiens avec filtrage par
+              note, ville, secteur et impact — plus tri complexe et pagination.
+              Architecture Docker déployée sur Fly.io avec une documentation API
+              complète décrivant tous les endpoints, paramètres de requête et
+              schémas de réponse.
+            </p>
+            <ul class="project-tags">
+              <li class="project-tag">Beautiful Soup</li>
+              <li class="project-tag">Docker</li>
+              <li class="project-tag">Fly.io</li>
+              <li class="project-tag">REST API</li>
+              <li class="project-tag">SQLAlchemy</li>
+              <li class="project-tag">Docs API</li>
+            </ul>
+          </div>
 
-  <!-- Footer -->
-  <footer>
-    <p class="footer-copy">© 2026 Jessica Iacovozzi</p>
-    <p class="footer-built">Saint-Hyacinthe, QC — Disponible pour de nouvelles opportunités <span>✦</span></p>
-  </footer>
+          <div class="project-card reveal reveal-delay-3">
+            <div class="project-num">
+              <span>05 / 06</span>
+              <span class="project-stack-badge"
+                >Next.js · React · Tailwind CSS</span
+              >
+            </div>
+            <h3 class="project-title">Charity Finder</h3>
+            <p class="project-desc">
+              <strong>Application web full-stack</strong> qui aide les
+              utilisateurs à découvrir des organismes de bienfaisance canadiens
+              selon leurs préférences et objectifs d'impact. Construite avec
+              Next.js, Supabase et Tailwind CSS, avec recherche d'organismes
+              avec filtres et profils détaillés.
+            </p>
+            <ul class="project-tags">
+              <li class="project-tag">Next.js</li>
+              <li class="project-tag">TypeScript</li>
+              <li class="project-tag">Supabase</li>
+              <li class="project-tag">Tailwind CSS</li>
+              <li class="project-tag">Post CSS</li>
+              <li class="project-tag">Design Responsive</li>
+            </ul>
+          </div>
 
-  <script src="../assets/js/main.js"></script>
-</body>
+          <div class="project-card reveal reveal-delay-3">
+            <div class="project-num">
+              <span>06 / 06</span>
+              <span class="project-stack-badge">React · TypeScript · Vite</span>
+            </div>
+            <h3 class="project-title">Investment Tracker</h3>
+            <p class="project-desc">
+              SPA React + TypeScript client uniquement, construite avec Vite,
+              qui modélise des projections d'investissement multi-comptes avec
+              intérêts composés, calendrier de contributions et règles des
+              comptes à avantages fiscaux canadiens (CÉLI, REER, CELIAPP,
+              RERI). <strong>Tout l'état persiste dans localStorage sans backend</strong> — avec
+              calculateurs inverses en mode objectif, ajustement pour
+              l'inflation et visualisations Recharts, déployée sur Vercel.
+            </p>
+            <ul class="project-tags">
+              <li class="project-tag">React</li>
+              <li class="project-tag">TypeScript</li>
+              <li class="project-tag">Vite</li>
+              <li class="project-tag">Vitest</li>
+              <li class="project-tag">Recharts</li>
+              <li class="project-tag">localStorage</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills">
+        <h2 class="section-label reveal">Compétences techniques</h2>
+        <div class="skills-grid reveal">
+          <div class="skill-group">
+            <p class="skill-group-label">Support &amp; Outils</p>
+            <ul class="skill-list">
+              <li>Freshdesk · Jira · Postman</li>
+              <li>Guru · REST APIs · GraphQL</li>
+              <li>Débogage API · Gestion des SLA</li>
+              <li>Documentation Technique</li>
+              <li>Shopify · Magento · WooCommerce · CommerceTools</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <p class="skill-group-label">Langages</p>
+            <ul class="skill-list">
+              <li>JavaScript (ES6+) · TypeScript</li>
+              <li>Python · Ruby</li>
+              <li>HTML5 · CSS / SASS</li>
+              <li>SQL · KQL</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <p class="skill-group-label">Frameworks</p>
+            <ul class="skill-list">
+              <li>React · Next.js · Vue.js</li>
+              <li>Node.js · Express.js</li>
+              <li>Django · Ruby on Rails</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <p class="skill-group-label">Plateformes &amp; DevOps</p>
+            <ul class="skill-list">
+              <li>Git · GitHub</li>
+              <li>Docker · AWS · Azure</li>
+              <li>CI/CD (GitHub Actions)</li>
+              <li>Fly.io · Vercel</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <p class="skill-group-label">Données</p>
+            <ul class="skill-list">
+              <li>PostgreSQL · SQLite · MongoDB</li>
+              <li>Supabase · Airtable</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <p class="skill-group-label">Pratiques</p>
+            <ul class="skill-list">
+              <li>Accessibilité WCAG</li>
+              <li>Agile / Scrum</li>
+              <li>Intégration SaaS</li>
+              <li>Rédaction Technique</li>
+              <li>Bilingue FR / EN</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact">
+        <div class="contact-bg-text" aria-hidden="true">Bonjour</div>
+        <span class="contact-label reveal">Me contacter</span>
+        <h2 class="contact-heading reveal reveal-delay-1">
+          Bâtissons de quoi<br />
+          <em>qui vaut la peine d'être livré.</em>
+        </h2>
+        <div class="contact-links reveal reveal-delay-2">
+          <a href="mailto:iacovozzi.jessica@gmail.com" class="contact-link"
+            >Courriel</a
+          >
+          <div class="contact-divider"></div>
+          <a
+            href="https://linkedin.com/in/jessica-iacovozzi"
+            target="_blank"
+            rel="noopener"
+            class="contact-link"
+            >LinkedIn</a
+          >
+          <div class="contact-divider"></div>
+          <a
+            href="https://github.com/jessica-iacovozzi"
+            target="_blank"
+            rel="noopener"
+            class="contact-link"
+            >GitHub</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p class="footer-copy">© 2026 Jessica Iacovozzi</p>
+      <p class="footer-built">
+        Saint-Hyacinthe, QC — Disponible pour de nouvelles opportunités
+        <span>✦</span>
+      </p>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+  </body>
 </html>
