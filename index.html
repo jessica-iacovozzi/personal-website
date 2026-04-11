@@ -12,6 +12,8 @@
 </head>
 <body>
 
+  <a href="#main" class="skip-link">Skip to content</a>
+
   <!-- Custom cursor -->
   <div class="cursor" id="cursor"></div>
   <div class="cursor-ring" id="cursor-ring"></div>
@@ -30,6 +32,8 @@
       <span></span><span></span><span></span>
     </button>
   </nav>
+
+  <main id="main">
 
   <!-- Hero -->
   <section id="hero">
@@ -114,20 +118,20 @@
       <p class="about-text">
         I work best where product depth meets technical ownership — SaaS integrations, API ecosystems, developer-facing systems. I care about making things robust, well-documented, and easier for the next person.
       </p>
-      <div class="about-tags">
-        <span class="tag">API Debugging</span>
-        <span class="tag">SaaS Integrations</span>
-        <span class="tag">Technical Writing</span>
-        <span class="tag">Full-Stack Dev</span>
-        <span class="tag">Bilingual EN/FR</span>
-        <span class="tag">Agile/Scrum</span>
-      </div>
+      <ul class="about-tags">
+        <li class="tag">API Debugging</li>
+        <li class="tag">SaaS Integrations</li>
+        <li class="tag">Technical Writing</li>
+        <li class="tag">Full-Stack Dev</li>
+        <li class="tag">Bilingual EN/FR</li>
+        <li class="tag">Agile/Scrum</li>
+      </ul>
     </div>
   </section>
 
   <!-- Projects -->
   <section id="projects">
-    <div class="section-label reveal">Selected Projects</div>
+    <h2 class="section-label reveal">Selected Projects</h2>
     <div class="projects-grid">
 
       <div class="project-card reveal">
@@ -139,14 +143,14 @@
         <p class="project-desc">
           Bilingual Vue.js 3 nonprofit website with <strong>70% load performance improvement</strong> (1.4s → 400ms) through lazy loading, bundle splitting, and compression. Hardened security with XSS/CSRF protection, reCAPTCHA v3, data sanitization, and server-side validation against an Airtable REST API.
         </p>
-        <div class="project-tags">
-          <span class="project-tag">Vue.js 3</span>
-          <span class="project-tag">Vuetify 3</span>
-          <span class="project-tag">Vue Router</span>
-          <span class="project-tag">Vue-i18n</span>
-          <span class="project-tag">REST API</span>
-          <span class="project-tag">reCAPTCHA v3</span>
-        </div>
+        <ul class="project-tags">
+          <li class="project-tag">Vue.js 3</li>
+          <li class="project-tag">Vuetify 3</li>
+          <li class="project-tag">Vue Router</li>
+          <li class="project-tag">Vue-i18n</li>
+          <li class="project-tag">REST API</li>
+          <li class="project-tag">reCAPTCHA v3</li>
+        </ul>
       </div>
 
       <div class="project-card reveal reveal-delay-1">
@@ -158,14 +162,14 @@
         <p class="project-desc">
           Full-stack cost estimator built with <strong>Next.js, React 19, TypeScript, and Supabase</strong> featuring real-time expense tracking, multi-table queries, and drag-and-drop editable estimates. WCAG-compliant UI using Tailwind CSS, Radix UI, React Hook Form, and Zod validation.
         </p>
-        <div class="project-tags">
-          <span class="project-tag">Next.js</span>
-          <span class="project-tag">React 19</span>
-          <span class="project-tag">TypeScript</span>
-          <span class="project-tag">Supabase</span>
-          <span class="project-tag">Tailwind CSS</span>
-          <span class="project-tag">WCAG</span>
-        </div>
+        <ul class="project-tags">
+          <li class="project-tag">Next.js</li>
+          <li class="project-tag">React 19</li>
+          <li class="project-tag">TypeScript</li>
+          <li class="project-tag">Supabase</li>
+          <li class="project-tag">Tailwind CSS</li>
+          <li class="project-tag">WCAG</li>
+        </ul>
       </div>
 
       <div class="project-card reveal reveal-delay-2">
@@ -177,14 +181,14 @@
         <p class="project-desc">
           Responsive React application with <strong>infinite scroll, API Ninjas integration</strong> via Axios and React Query, and a WCAG-compliant accessible UI built with Chakra UI and semantic HTML5. Clean component architecture with efficient data fetching patterns.
         </p>
-        <div class="project-tags">
-          <span class="project-tag">React</span>
-          <span class="project-tag">React Query</span>
-          <span class="project-tag">Axios</span>
-          <span class="project-tag">Chakra UI</span>
-          <span class="project-tag">WCAG</span>
-          <span class="project-tag">REST API</span>
-        </div>
+        <ul class="project-tags">
+          <li class="project-tag">React</li>
+          <li class="project-tag">React Query</li>
+          <li class="project-tag">Axios</li>
+          <li class="project-tag">Chakra UI</li>
+          <li class="project-tag">WCAG</li>
+          <li class="project-tag">REST API</li>
+        </ul>
       </div>
 
       <div class="project-card reveal reveal-delay-3">
@@ -196,14 +200,14 @@
         <p class="project-desc">
           <strong>RESTful Rails API</strong> providing searchable access to Canadian charities data with filtering by rating, city, sector, and impact — plus complex sorting and pagination. Dockerized architecture deployed on Fly.io with comprehensive API documentation detailing all endpoints, query parameters, and response schemas.
         </p>
-        <div class="project-tags">
-          <span class="project-tag">Ruby on Rails</span>
-          <span class="project-tag">Docker</span>
-          <span class="project-tag">Fly.io</span>
-          <span class="project-tag">REST API</span>
-          <span class="project-tag">PostgreSQL</span>
-          <span class="project-tag">API Docs</span>
-        </div>
+        <ul class="project-tags">
+          <li class="project-tag">Ruby on Rails</li>
+          <li class="project-tag">Docker</li>
+          <li class="project-tag">Fly.io</li>
+          <li class="project-tag">REST API</li>
+          <li class="project-tag">PostgreSQL</li>
+          <li class="project-tag">API Docs</li>
+        </ul>
       </div>
 
     </div>
@@ -211,7 +215,7 @@
 
   <!-- Skills -->
   <section id="skills">
-    <div class="section-label reveal">Technical Skills</div>
+    <h2 class="section-label reveal">Technical Skills</h2>
     <div class="skills-grid reveal">
       <div class="skill-group">
         <p class="skill-group-label">Support &amp; Tooling</p>
@@ -285,6 +289,8 @@
       <a href="https://github.com/jessica-iacovozzi" target="_blank" rel="noopener" class="contact-link">GitHub</a>
     </div>
   </section>
+
+  </main>
 
   <!-- Footer -->
   <footer>

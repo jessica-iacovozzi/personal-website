@@ -4,7 +4,7 @@
   --bg: #090909;
   --bg2: #111111;
   --text: #EDEBE6;
-  --muted: #5A5A5A;
+  --muted: #848484;
   --accent: #C6FF47;
   --accent-dim: rgba(198,255,71,0.12);
   --border: rgba(237,235,230,0.1);
@@ -13,7 +13,7 @@
   --font-mono: 'JetBrains Mono', monospace;
 }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 body {
   background: var(--bg);
@@ -23,6 +23,24 @@ body {
   line-height: 1.65;
   overflow-x: hidden;
   cursor: none;
+}
+
+/* ── SKIP LINK ── */
+.skip-link {
+  position: absolute; top: -100%; left: 16px;
+  background: var(--accent); color: var(--bg);
+  font-family: var(--font-mono); font-size: 13px; font-weight: 600;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 12px 20px; text-decoration: none;
+  z-index: 200; border-radius: 0 0 4px 4px;
+  transition: top 0.2s ease;
+}
+.skip-link:focus { top: 0; }
+
+/* ── FOCUS ── */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }
 
 /* ── CUSTOM CURSOR ── */
@@ -70,13 +88,13 @@ nav.menu-open {
 .nav-logo {
   font-family: var(--font-mono); font-size: 13px; font-weight: 500;
   letter-spacing: 0.12em; text-transform: uppercase; color: var(--text);
-  text-decoration: none;
+  text-decoration: none; padding: 6px;
 }
 .nav-links { display: flex; gap: 40px; list-style: none; align-items: center; }
 .nav-links a {
   font-family: var(--font-mono); font-size: 11px; font-weight: 500;
   letter-spacing: 0.18em; text-transform: uppercase; color: var(--text);
-  text-decoration: none; opacity: 0.6;
+  text-decoration: none; opacity: 0.6; padding: 8px 4px;
   transition: opacity 0.2s;
 }
 .nav-links a:hover { opacity: 1; }
@@ -84,7 +102,7 @@ nav.menu-open {
   font-family: var(--font-mono); font-size: 11px; font-weight: 600;
   letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent) !important;
   text-decoration: none; opacity: 1 !important;
-  border: 1px solid rgba(198,255,71,0.4); padding: 4px 10px;
+  border: 1px solid rgba(198,255,71,0.6); padding: 4px 10px;
   transition: border-color 0.2s, background 0.2s !important;
 }
 .nav-lang:hover { border-color: var(--accent); background: rgba(198,255,71,0.08); }
@@ -290,7 +308,7 @@ section { padding: 120px 48px; }
   color: rgba(237,235,230,0.75); margin-bottom: 32px;
 }
 .about-text strong { color: var(--text); font-weight: 500; }
-.about-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 40px; }
+.about-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 40px; list-style: none; }
 .tag {
   font-family: var(--font-mono); font-size: 11px; font-weight: 500;
   letter-spacing: 0.12em; text-transform: uppercase;
@@ -380,7 +398,7 @@ section { padding: 120px 48px; }
   line-height: 1.75; margin-bottom: 32px;
 }
 .project-desc strong { color: rgba(237,235,230,0.85); font-weight: 500; }
-.project-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.project-tags { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; }
 .project-tag {
   font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.1em;
   text-transform: uppercase; color: var(--muted);
@@ -450,7 +468,7 @@ section { padding: 120px 48px; }
 .contact-link {
   font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.18em;
   text-transform: uppercase; color: var(--text); text-decoration: none;
-  padding-bottom: 4px; border-bottom: 1px solid var(--muted);
+  padding: 8px 4px; border-bottom: 1px solid var(--muted);
   transition: color 0.2s, border-color 0.2s;
 }
 .contact-link:hover { color: var(--accent); border-color: var(--accent); }
@@ -550,9 +568,19 @@ footer {
   .nav-links a:hover { opacity: 1; }
   .nav-links .nav-lang {
     display: inline-block; margin-top: 32px;
-    border: 1px solid rgba(198,255,71,0.4); padding: 6px 14px;
+    border: 1px solid rgba(198,255,71,0.6); padding: 6px 14px;
   }
   .nav-links li:has(.nav-lang) { border-bottom: none; }
   .skills-grid { grid-template-columns: 1fr; }
   .hero-meta { flex-direction: column; gap: 24px; align-items: flex-start; }
+}
+
+/* ── REDUCED MOTION ── */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .hero-eyebrow, .hero-name-line, .hero-meta,
+  .hero-scroll-hint, .hero-visual { animation: none; opacity: 1; transform: none; }
+  .hero-visual-dot { animation: none; }
+  .marquee-track { animation: none; }
+  .reveal { transition: none; opacity: 1; transform: none; }
 }

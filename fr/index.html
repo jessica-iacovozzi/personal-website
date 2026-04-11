@@ -12,6 +12,8 @@
 </head>
 <body>
 
+  <a href="#main" class="skip-link">Passer au contenu</a>
+
   <!-- Custom cursor -->
   <div class="cursor" id="cursor"></div>
   <div class="cursor-ring" id="cursor-ring"></div>
@@ -26,10 +28,12 @@
       <li><a href="#contact">Contact</a></li>
       <li><a href="../" class="nav-lang" hreflang="en">EN</a></li>
     </ul>
-    <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <button class="nav-hamburger" aria-label="Basculer le menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </nav>
+
+  <main id="main">
 
   <!-- Hero -->
   <section id="hero">
@@ -114,20 +118,20 @@
       <p class="about-text">
         Je performe là où la profondeur produit rencontre la responsabilité technique — intégrations SaaS, écosystèmes API, systèmes orientés développeurs. J'ai à cœur de rendre les choses robustes, bien documentées, et plus simples pour la personne qui vient après.
       </p>
-      <div class="about-tags">
-        <span class="tag">Débogage API</span>
-        <span class="tag">Intégrations SaaS</span>
-        <span class="tag">Rédaction Technique</span>
-        <span class="tag">Développement Full-Stack</span>
-        <span class="tag">Bilingue FR/EN</span>
-        <span class="tag">Agile/Scrum</span>
-      </div>
+      <ul class="about-tags">
+        <li class="tag">Débogage API</li>
+        <li class="tag">Intégrations SaaS</li>
+        <li class="tag">Rédaction Technique</li>
+        <li class="tag">Développement Full-Stack</li>
+        <li class="tag">Bilingue FR/EN</li>
+        <li class="tag">Agile/Scrum</li>
+      </ul>
     </div>
   </section>
 
   <!-- Projects -->
   <section id="projects">
-    <div class="section-label reveal">Projets sélectionnés</div>
+    <h2 class="section-label reveal">Projets sélectionnés</h2>
     <div class="projects-grid">
 
       <div class="project-card reveal">
@@ -139,14 +143,14 @@
         <p class="project-desc">
           Application web bilingue Vue.js 3 pour un organisme sans but lucratif avec <strong>70% d'amélioration des performances de chargement</strong> (1,4s → 400ms) via le lazy loading, la division de bundle et la compression. Sécurité renforcée avec protection XSS/CSRF, reCAPTCHA v3, sanitisation des données et validation côté serveur contre une API REST Airtable.
         </p>
-        <div class="project-tags">
-          <span class="project-tag">Vue.js 3</span>
-          <span class="project-tag">Vuetify 3</span>
-          <span class="project-tag">Vue Router</span>
-          <span class="project-tag">Vue-i18n</span>
-          <span class="project-tag">REST API</span>
-          <span class="project-tag">reCAPTCHA v3</span>
-        </div>
+        <ul class="project-tags">
+          <li class="project-tag">Vue.js 3</li>
+          <li class="project-tag">Vuetify 3</li>
+          <li class="project-tag">Vue Router</li>
+          <li class="project-tag">Vue-i18n</li>
+          <li class="project-tag">REST API</li>
+          <li class="project-tag">reCAPTCHA v3</li>
+        </ul>
       </div>
 
       <div class="project-card reveal reveal-delay-1">
@@ -158,14 +162,14 @@
         <p class="project-desc">
           Estimateur de coûts full-stack construit avec <strong>Next.js, React 19, TypeScript et Supabase</strong>, avec suivi des dépenses en temps réel, requêtes multi-tables et estimations éditables par glisser-déposer. Interface conforme WCAG utilisant Tailwind CSS, Radix UI, React Hook Form et validation Zod.
         </p>
-        <div class="project-tags">
-          <span class="project-tag">Next.js</span>
-          <span class="project-tag">React 19</span>
-          <span class="project-tag">TypeScript</span>
-          <span class="project-tag">Supabase</span>
-          <span class="project-tag">Tailwind CSS</span>
-          <span class="project-tag">WCAG</span>
-        </div>
+        <ul class="project-tags">
+          <li class="project-tag">Next.js</li>
+          <li class="project-tag">React 19</li>
+          <li class="project-tag">TypeScript</li>
+          <li class="project-tag">Supabase</li>
+          <li class="project-tag">Tailwind CSS</li>
+          <li class="project-tag">WCAG</li>
+        </ul>
       </div>
 
       <div class="project-card reveal reveal-delay-2">
@@ -177,14 +181,14 @@
         <p class="project-desc">
           Application React responsive avec <strong>défilement infini et intégration API Ninjas</strong> via Axios et React Query, et une interface accessible conforme WCAG construite avec Chakra UI et HTML5 sémantique. Architecture de composants propre avec des patterns de récupération de données efficaces.
         </p>
-        <div class="project-tags">
-          <span class="project-tag">React</span>
-          <span class="project-tag">React Query</span>
-          <span class="project-tag">Axios</span>
-          <span class="project-tag">Chakra UI</span>
-          <span class="project-tag">WCAG</span>
-          <span class="project-tag">REST API</span>
-        </div>
+        <ul class="project-tags">
+          <li class="project-tag">React</li>
+          <li class="project-tag">React Query</li>
+          <li class="project-tag">Axios</li>
+          <li class="project-tag">Chakra UI</li>
+          <li class="project-tag">WCAG</li>
+          <li class="project-tag">REST API</li>
+        </ul>
       </div>
 
       <div class="project-card reveal reveal-delay-3">
@@ -196,14 +200,14 @@
         <p class="project-desc">
           <strong>API Rails RESTful</strong> offrant un accès consultable aux données des organismes de bienfaisance canadiens avec filtrage par note, ville, secteur et impact — plus tri complexe et pagination. Architecture Docker déployée sur Fly.io avec une documentation API complète décrivant tous les endpoints, paramètres de requête et schémas de réponse.
         </p>
-        <div class="project-tags">
-          <span class="project-tag">Ruby on Rails</span>
-          <span class="project-tag">Docker</span>
-          <span class="project-tag">Fly.io</span>
-          <span class="project-tag">REST API</span>
-          <span class="project-tag">PostgreSQL</span>
-          <span class="project-tag">Docs API</span>
-        </div>
+        <ul class="project-tags">
+          <li class="project-tag">Ruby on Rails</li>
+          <li class="project-tag">Docker</li>
+          <li class="project-tag">Fly.io</li>
+          <li class="project-tag">REST API</li>
+          <li class="project-tag">PostgreSQL</li>
+          <li class="project-tag">Docs API</li>
+        </ul>
       </div>
 
     </div>
@@ -211,7 +215,7 @@
 
   <!-- Skills -->
   <section id="skills">
-    <div class="section-label reveal">Compétences techniques</div>
+    <h2 class="section-label reveal">Compétences techniques</h2>
     <div class="skills-grid reveal">
       <div class="skill-group">
         <p class="skill-group-label">Support &amp; Outils</p>
@@ -286,6 +290,8 @@
       <a href="https://github.com/jessica-iacovozzi" target="_blank" rel="noopener" class="contact-link">GitHub</a>
     </div>
   </section>
+
+  </main>
 
   <!-- Footer -->
   <footer>
