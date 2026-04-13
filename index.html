@@ -222,27 +222,51 @@
           <div class="project-card reveal">
             <div class="project-num">
               <span>01 / 06</span>
-              <span class="project-stack-badge">Vue.js · Airtable · i18n</span>
+              <span class="project-stack-badge">React · TypeScript · Vite</span>
             </div>
-            <h3 class="project-title">Rosetta's Angels</h3>
+            <h3 class="project-title">Investment Tracker</h3>
             <p class="project-desc">
-              Bilingual Vue.js 3 nonprofit website with
-              <strong>70% load performance improvement</strong> (1.4s → 400ms)
-              through lazy loading, bundle splitting, and compression. Hardened
-              security with XSS/CSRF protection, reCAPTCHA v3, data
-              sanitization, and server-side validation against an Airtable REST
-              API.
+              A client-only React + TypeScript SPA built with Vite that models
+              multi-account investment projections using compound interest,
+              contribution scheduling, and Canadian tax-advantaged account rules
+              (TFSA, RRSP, FHSA, LIRA).
+              <strong
+                >All state persists in localStorage with no backend</strong
+              >
+              — featuring goal-mode reverse calculators, inflation adjustment,
+              and Recharts visualizations, deployed on Vercel.
             </p>
             <ul class="project-tags">
-              <li class="project-tag">Vue.js 3</li>
-              <li class="project-tag">Vuetify 3</li>
-              <li class="project-tag">Vue Router</li>
-              <li class="project-tag">Vue-i18n</li>
-              <li class="project-tag">REST API</li>
-              <li class="project-tag">reCAPTCHA v3</li>
+              <li class="project-tag">React</li>
+              <li class="project-tag">TypeScript</li>
+              <li class="project-tag">Vite</li>
+              <li class="project-tag">Vitest</li>
+              <li class="project-tag">Recharts</li>
+              <li class="project-tag">localStorage</li>
             </ul>
+            <div class="project-mockup">
+              <picture class="project-mockup-picture">
+                <source
+                  media="(max-width: 600px)"
+                  srcset="assets/images/investment_tracker_mobile.png"
+                />
+                <img
+                  src="assets/images/investment_tracker_desktop.png"
+                  alt="Investment tracker website screenshot"
+                  loading="lazy"
+                />
+              </picture>
+              <a
+                href="https://personal-multi-investment-tracker.vercel.app/"
+                class="project-mockup-cta"
+                target="_blank"
+                rel="noopener"
+              >
+                View Live <span class="project-mockup-arrow"></span>
+              </a>
+            </div>
           </div>
-
+          
           <div class="project-card reveal reveal-delay-1">
             <div class="project-num">
               <span>02 / 06</span>
@@ -264,106 +288,209 @@
               <li class="project-tag">Tailwind CSS</li>
               <li class="project-tag">WCAG</li>
             </ul>
-          </div>
-
-          <div class="project-card reveal reveal-delay-2">
-            <div class="project-num">
-              <span>03 / 06</span>
-              <span class="project-stack-badge"
-                >React · API · Accessibility</span
+            <div class="project-mockup">
+              <picture class="project-mockup-picture">
+                <source
+                media="(max-width: 600px)"
+                srcset="assets/images/whiskerbudget_mobile.png"
+                />
+                <img
+                src="assets/images/whiskerbudget_desktop.png"
+                alt="Whisker Budget website screenshot"
+                loading="lazy"
+                />
+              </picture>
+              <a
+              href="https://whiskerbudget.ca/"
+              class="project-mockup-cta"
+              target="_blank"
+              rel="noopener"
               >
-            </div>
-            <h3 class="project-title">Dog Breed Hub</h3>
-            <p class="project-desc">
-              Responsive React application with
-              <strong>infinite scroll, API Ninjas integration</strong> via Axios
-              and React Query, and a WCAG-compliant accessible UI built with
-              Chakra UI and semantic HTML5. Clean component architecture with
-              efficient data fetching patterns.
-            </p>
-            <ul class="project-tags">
-              <li class="project-tag">React</li>
-              <li class="project-tag">React Query</li>
-              <li class="project-tag">Axios</li>
-              <li class="project-tag">Chakra UI</li>
-              <li class="project-tag">WCAG</li>
-              <li class="project-tag">REST API</li>
-            </ul>
-          </div>
-
-          <div class="project-card reveal reveal-delay-3">
-            <div class="project-num">
-              <span>04 / 06</span>
-              <span class="project-stack-badge">Python · FastAPI · PostgreSQL</span>
-            </div>
-            <h3 class="project-title">Canadian Charities API</h3>
-            <p class="project-desc">
-              <strong>RESTful API</strong> providing searchable access to
-              Canadian charities data with filtering by rating, city, sector,
-              and impact — plus complex sorting and pagination. Dockerized
-              architecture deployed on Fly.io with comprehensive API
-              documentation detailing all endpoints, query parameters, and
-              response schemas.
-            </p>
-            <ul class="project-tags">
-              <li class="project-tag">Beautiful Soup</li>
-              <li class="project-tag">Docker</li>
-              <li class="project-tag">Fly.io</li>
-              <li class="project-tag">REST API</li>
-              <li class="project-tag">SQLAlchemy</li>
-              <li class="project-tag">API Docs</li>
-            </ul>
-          </div>
-
-          <div class="project-card reveal reveal-delay-3">
-            <div class="project-num">
-              <span>05 / 06</span>
-              <span class="project-stack-badge"
-                >Next.js · React · Tailwind CSS</span
-              >
-            </div>
-            <h3 class="project-title">Charity Finder</h3>
-            <p class="project-desc">
-              <strong>Full-stack web application</strong> that helps users
-              discover Canadian charities based on their preferences and impact
-              goals. Built with Next.js, Supabase, and Tailwind CSS, featuring
-              charity search with filters, and detailed charity profiles.
-            </p>
-            <ul class="project-tags">
-              <li class="project-tag">Next.js</li>
-              <li class="project-tag">TypeScript</li>
-              <li class="project-tag">Supabase</li>
-              <li class="project-tag">Tailwind CSS</li>
-              <li class="project-tag">Post CSS</li>
-              <li class="project-tag">Responsive Design</li>
-            </ul>
-          </div>
-
-          <div class="project-card reveal reveal-delay-3">
-            <div class="project-num">
-              <span>06 / 06</span>
-              <span class="project-stack-badge">React · TypeScript · Vite</span>
-            </div>
-            <h3 class="project-title">Investment Tracker</h3>
-            <p class="project-desc">
-              A client-only React + TypeScript SPA built with Vite that models
-              multi-account investment projections using compound interest,
-              contribution scheduling, and Canadian tax-advantaged account rules
-              (TFSA, RRSP, FHSA, LIRA). <strong>All state persists in localStorage with
-              no backend</strong> — featuring goal-mode reverse calculators, inflation
-              adjustment, and Recharts visualizations, deployed on Vercel.
-            </p>
-            <ul class="project-tags">
-              <li class="project-tag">React</li>
-              <li class="project-tag">TypeScript</li>
-              <li class="project-tag">Vite</li>
-              <li class="project-tag">Vitest</li>
-              <li class="project-tag">Recharts</li>
-              <li class="project-tag">localStorage</li>
-            </ul>
+              View Live <span class="project-mockup-arrow"></span>
+            </a>
           </div>
         </div>
-      </section>
+        
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-num">
+            <span>03 / 06</span>
+            <span class="project-stack-badge">React · API · Accessibility</span>
+          </div>
+          <h3 class="project-title">Dog Breed Hub</h3>
+          <p class="project-desc">
+            Responsive React application with
+            <strong>infinite scroll, API Ninjas integration</strong> via Axios
+            and React Query, and a WCAG-compliant accessible UI built with
+            Chakra UI and semantic HTML5. Clean component architecture with
+            efficient data fetching patterns.
+          </p>
+          <ul class="project-tags">
+            <li class="project-tag">React</li>
+            <li class="project-tag">React Query</li>
+            <li class="project-tag">Axios</li>
+            <li class="project-tag">Chakra UI</li>
+            <li class="project-tag">WCAG</li>
+            <li class="project-tag">REST API</li>
+          </ul>
+          <div class="project-mockup">
+            <picture class="project-mockup-picture">
+              <source
+              media="(max-width: 600px)"
+              srcset="assets/images/db_hub_mobile.png"
+              />
+              <img
+              src="assets/images/db_hub_desktop.png"
+              alt="Dog Breed Hub app screenshot"
+              loading="lazy"
+              />
+            </picture>
+            <a
+            href="https://dog-breed-hub.vercel.app/"
+            class="project-mockup-cta"
+            target="_blank"
+            rel="noopener"
+            >
+            View Live <span class="project-mockup-arrow"></span>
+          </a>
+        </div>
+      </div>
+      
+      <div class="project-card reveal reveal-delay-3">
+        <div class="project-num">
+          <span>04 / 06</span>
+          <span class="project-stack-badge"
+          >Next.js · React · Tailwind CSS</span
+          >
+        </div>
+        <h3 class="project-title">Charity Finder</h3>
+        <p class="project-desc">
+          <strong>Full-stack web application</strong> that helps users
+          discover Canadian charities based on their preferences and impact
+          goals. Built with Next.js, Supabase, and Tailwind CSS, featuring
+          charity search with filters, and detailed charity profiles.
+        </p>
+        <ul class="project-tags">
+          <li class="project-tag">Next.js</li>
+          <li class="project-tag">TypeScript</li>
+          <li class="project-tag">Supabase</li>
+          <li class="project-tag">Tailwind CSS</li>
+          <li class="project-tag">Post CSS</li>
+          <li class="project-tag">Responsive Design</li>
+        </ul>
+        <div class="project-mockup">
+          <picture class="project-mockup-picture">
+            <source
+            media="(max-width: 600px)"
+            srcset="assets/images/charity_finder_mobile.png"
+            />
+            <img
+            src="assets/images/charity_finder_desktop.png"
+            alt="Charity Finder website screenshot"
+            loading="lazy"
+            />
+          </picture>
+          <a
+          href="https://canadian-charity-search-v2.vercel.app/"
+          class="project-mockup-cta"
+          target="_blank"
+          rel="noopener"
+          >
+          View Live <span class="project-mockup-arrow"></span>
+        </a>
+      </div>
+    </div>
+    
+    <div class="project-card reveal reveal-delay-4">
+      <div class="project-num">
+        <span>05 / 06</span>
+        <span class="project-stack-badge"
+        >Python · FastAPI · PostgreSQL</span
+        >
+      </div>
+      <h3 class="project-title">Canadian Charities API</h3>
+      <p class="project-desc">
+        <strong>RESTful API</strong> providing searchable access to Canadian
+        charities data with filtering by rating, city, sector, and impact —
+        plus complex sorting and pagination. Dockerized architecture
+        deployed on Fly.io with comprehensive API documentation detailing
+        all endpoints, query parameters, and response schemas.
+      </p>
+      <ul class="project-tags">
+        <li class="project-tag">Beautiful Soup</li>
+        <li class="project-tag">Docker</li>
+        <li class="project-tag">Fly.io</li>
+        <li class="project-tag">REST API</li>
+        <li class="project-tag">SQLAlchemy</li>
+        <li class="project-tag">API Docs</li>
+      </ul>
+      <div class="project-mockup">
+        <picture class="project-mockup-picture">
+          <source
+          media="(max-width: 600px)"
+          srcset="assets/images/charity_api_mobile.png"
+          />
+          <img
+          src="assets/images/charity_api_desktop.png"
+          alt="Canadian Charities API website screenshot"
+          loading="lazy"
+          />
+        </picture>
+        <a
+        href="https://canadian-charities-api.fly.dev/"
+        class="project-mockup-cta"
+        target="_blank"
+        rel="noopener"
+        >
+        View Live <span class="project-mockup-arrow"></span>
+      </a>
+    </div>
+  </div>
+  
+  <div class="project-card reveal reveal-delay-5">
+    <div class="project-num">
+      <span>06 / 06</span>
+      <span class="project-stack-badge">Vue.js · Airtable · i18n</span>
+    </div>
+    <h3 class="project-title">Rosetta's Angels</h3>
+    <p class="project-desc">
+      Bilingual Vue.js 3 nonprofit website with
+      <strong>70% load performance improvement</strong> (1.4s → 400ms)
+      through lazy loading, bundle splitting, and compression. Hardened
+      security with XSS/CSRF protection, reCAPTCHA v3, data sanitization,
+      and server-side validation against an Airtable REST API.
+    </p>
+    <ul class="project-tags">
+      <li class="project-tag">Vue.js 3</li>
+      <li class="project-tag">Vuetify 3</li>
+      <li class="project-tag">Vue Router</li>
+      <li class="project-tag">Vue-i18n</li>
+      <li class="project-tag">REST API</li>
+      <li class="project-tag">reCAPTCHA v3</li>
+    </ul>
+    <div class="project-mockup">
+      <picture class="project-mockup-picture">
+        <source
+        media="(max-width: 600px)"
+        srcset="assets/images/rosettas_angels_mobile.png"
+        />
+        <img
+        src="assets/images/rosettas_angels_desktop.png"
+        alt="Rosetta's Angels website screenshot"
+        loading="lazy"
+        />
+      </picture>
+      <a
+      href="https://rosettasangels.org/"
+      class="project-mockup-cta"
+      target="_blank"
+      rel="noopener"
+      >
+      View Live <span class="project-mockup-arrow"></span>
+    </a>
+  </div>
+</div>
+</div>
+</section>
 
       <!-- Skills -->
       <section id="skills">
@@ -461,7 +588,8 @@
     <footer>
       <p class="footer-copy">© 2026 Jessica Iacovozzi</p>
       <p class="footer-built">
-        Saint-Hyacinthe, QC — Available for new opportunities <span>✦</span>
+        <!-- Saint-Hyacinthe, QC — Available for new opportunities <span>✦</span> -->
+        Saint-Hyacinthe, QC
       </p>
     </footer>
 

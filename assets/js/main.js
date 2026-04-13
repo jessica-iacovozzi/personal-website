@@ -25,6 +25,22 @@ if (window.matchMedia('(hover: hover)').matches) {
   });
 }
 
+// ── PROJECT MOCKUP (touch toggle) ──
+if (window.matchMedia('(hover: none)').matches) {
+  document.querySelectorAll('.project-card').forEach(card => {
+    if (!card.querySelector('.project-mockup')) return;
+    card.addEventListener('click', e => {
+      if (e.target('.project-mockup-cta')) return;
+      const isActive = card.classList.toggle('mockup-active');
+      if (isActive) {
+        document.querySelectorAll('.project-card.mockup-active').forEach(other => {
+          if (other !== card) other.classList.remove('mockup-active');
+        });
+      }
+    });
+  });
+}
+
 // ── SCROLL REVEAL ──
 const observer = new IntersectionObserver(entries => {
   entries.forEach(e => {
@@ -111,4 +127,3 @@ if (hamburger && navLinks) {
     }
   });
 }
-
