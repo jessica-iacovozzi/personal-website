@@ -254,7 +254,7 @@ nav.menu-open {
   font-family: var(--font-body);
   font-size: clamp(14px, 1.4vw, 18px);
   font-weight: 300;
-  max-width: 420px;
+  max-width: 500px;
   color: rgba(237, 235, 230, 0.7);
 }
 .hero-role strong {
@@ -297,8 +297,8 @@ nav.menu-open {
 
 .hero-scroll-hint {
   position: absolute;
-  right: 24px;
-  bottom: 96px;
+  right: 35px;
+  bottom: 110px;
   font-family: var(--font-mono);
   font-size: 10px;
   letter-spacing: 0.2em;
@@ -311,8 +311,8 @@ nav.menu-open {
 /* ── HERO VISUAL ── */
 .hero-visual {
   position: absolute;
-  top: 35%;
-  left: 50%;
+  top: 30%;
+  left: 60%;
   transform: translate(-50%, -50%);
   width: 300px;
   height: 300px;
