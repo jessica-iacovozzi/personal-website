@@ -80,19 +80,27 @@
           <span class="hero-name-line">Iacovozzi</span>
         </h1>
         <div class="hero-meta">
-          <p class="hero-role">
-            De la résolution de problèmes à des solutions solides.
-          </p>
-          <a href="#projects" class="hero-cta">
-            Voir mes projets
-            <span class="hero-cta-arrow"></span>
-          </a>
+          <div class="hero-intro">
+            <p class="hero-role">
+              De la résolution de problèmes à des solutions solides.
+            </p>
+          </div>
+          <div class="hero-actions">
+            <a href="#projects" class="hero-cta hero-cta--primary">
+              Explorer mes projets
+              <span class="hero-cta-arrow"></span>
+            </a>
+            <a href="#contact" class="hero-cta hero-cta--secondary">Démarrer une conversation</a>
+          </div>
         </div>
         <p class="hero-scroll-hint">Défile pour explorer</p>
       </section>
 
       <!-- Marquee -->
       <div class="marquee-wrap">
+        <button class="marquee-toggle" type="button" aria-pressed="false">
+          Arrêter l'animation
+        </button>
         <div class="marquee-track" aria-hidden="true">
           <span class="marquee-item"
             >REST APIs <span class="marquee-dot">✦</span></span
@@ -222,7 +230,9 @@
 
       <!-- Projects -->
       <section id="projects">
-        <h2 class="section-label reveal">Projets sélectionnés</h2>
+        <div class="section-heading reveal">
+          <h2 class="section-label">Projets sélectionnés</h2>
+        </div>
         <div class="projects-grid">
           <div class="project-card reveal">
             <div class="project-num">
@@ -474,10 +484,6 @@
             </ul>
             <div class="project-mockup">
               <picture class="project-mockup-picture">
-                <source
-                  media="(max-width: 600px)"
-                  srcset="../assets/images/rosettas_angels_mobile.webp"
-                />
                 <img
                   src="../assets/images/rosettas_angels_desktop.webp"
                   alt="Capture d'écran du site Rosetta's Angels"
@@ -499,7 +505,9 @@
 
       <!-- Skills -->
       <section id="skills">
-        <h2 class="section-label reveal">Compétences techniques</h2>
+        <div class="section-heading reveal">
+          <h2 class="section-label">Compétences techniques</h2>
+        </div>
         <div class="skills-grid reveal">
           <div class="skill-group">
             <p class="skill-group-label">Support &amp; Outils</p>

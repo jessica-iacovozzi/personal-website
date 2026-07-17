@@ -23,33 +23,43 @@ if (window.matchMedia("(hover: hover)").matches) {
   }
   animateRing();
 
-  document
-    .querySelectorAll("a, button, .project-card, .skill-group, .tag")
-    .forEach((el) => {
-      el.addEventListener("mouseenter", () => cursor.classList.add("hovering"));
-      el.addEventListener("mouseleave", () =>
-        cursor.classList.remove("hovering"),
-      );
-    });
-}
+  document.querySelectorAll("a, button").forEach((el) => {
+    el.addEventListener("mouseenter", () => cursor.classList.add("hovering"));
+    el.addEventListener("mouseleave", () =>
+      cursor.classList.remove("hovering"),
+    );
+  });
 
-// ── PROJECT MOCKUP (touch toggle) ──
-if (window.matchMedia("(hover: none)").matches) {
+  function setCardCursorColor(card) {
+    const accent = getComputedStyle(card)
+      .getPropertyValue("--card-accent")
+      .trim();
+    if (!accent) return;
+
+    cursor.classList.add("card-hover");
+    cursor.style.backgroundColor = `rgb(${accent})`;
+    ring.style.borderColor = `rgba(${accent}, 0.5)`;
+  }
+
+  function clearCardCursorColor() {
+    cursor.classList.remove("card-hover");
+    cursor.style.backgroundColor = "";
+    ring.style.borderColor = "";
+  }
+
   document.querySelectorAll(".project-card").forEach((card) => {
-    if (!card.querySelector(".project-mockup")) return;
-    card.addEventListener("click", (e) => {
-      if (e.target(".project-mockup-cta")) return;
-      const isActive = card.classList.toggle("mockup-active");
-      if (isActive) {
-        document
-          .querySelectorAll(".project-card.mockup-active")
-          .forEach((other) => {
-            if (other !== card) other.classList.remove("mockup-active");
-          });
-      }
+    card.addEventListener("mouseover", (e) => {
+      if (card.contains(e.relatedTarget)) return;
+      setCardCursorColor(card);
+    });
+    card.addEventListener("mouseout", (e) => {
+      if (card.contains(e.relatedTarget)) return;
+      clearCardCursorColor();
     });
   });
 }
+
+// ── PROJECT MOCKUP (touch toggle) ──
 
 // ── SCROLL REVEAL ──
 const observer = new IntersectionObserver(
@@ -75,6 +85,43 @@ window.addEventListener(
   },
   { passive: true },
 );
+
+const marquee = document.querySelector(".marquee-wrap");
+const marqueeToggle = document.querySelector(".marquee-toggle");
+
+if (marquee && marqueeToggle) {
+  marqueeToggle.addEventListener("click", () => {
+    const isPaused = marquee.classList.toggle("is-paused");
+    const isFrench = document.documentElement.lang === "fr";
+    marqueeToggle.setAttribute("aria-pressed", isPaused.toString());
+    marqueeToggle.textContent = isPaused
+      ? isFrench
+        ? "Relancer l'animation"
+        : "Resume motion"
+      : isFrench
+        ? "Arrêter l'animation"
+        : "Pause motion";
+  });
+}
+
+const sectionLinks = [...document.querySelectorAll('.nav-links a[href^="#"]')];
+const sectionObserver = new IntersectionObserver(
+  (entries) => {
+    const activeSection = entries.find((entry) => entry.isIntersecting);
+    if (!activeSection) return;
+
+    sectionLinks.forEach((link) => link.removeAttribute("aria-current"));
+    const activeLink = sectionLinks.find(
+      (link) => link.hash === `#${activeSection.target.id}`,
+    );
+    activeLink?.setAttribute("aria-current", "location");
+  },
+  { rootMargin: "-25% 0px -65%", threshold: 0 },
+);
+
+document
+  .querySelectorAll("main section[id]:not(#hero)")
+  .forEach((section) => sectionObserver.observe(section));
 
 // ── HAMBURGER MENU ──
 const hamburger = document.querySelector(".nav-hamburger");
